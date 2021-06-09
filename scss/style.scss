@@ -1,0 +1,82 @@
+/*vars*/
+
+$width-col-1: 100px;
+$width-col-2: 250px;
+$width-col-3: 100px;
+$width-col-4: 100px;
+
+/*start header*/
+.container {
+	width: 640px;
+	margin: 0px auto;
+}
+
+.header__title {
+	font-size: 2rem;
+	margin: 1.5rem;
+	text-align: center;
+}
+
+/*end header*/
+
+/*start filter*/
+
+.header__control {
+margin: 20px 20px 40px 40px;
+}
+.label {
+	margin: 12px 0 4px;
+}
+.search-button button {
+	margin: 24px 0 0;
+	padding: 4px 12px;
+}
+
+/*end filter*/
+
+/*start table*/
+.table__title {
+	margin: 24px 0 0;
+	text-align: center;
+}
+.table__title span {
+	font-size: 1.5rem;
+}
+.table__columns {
+	margin: 0;
+}
+.display-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.title-col-1, .table__content-col-1 {
+	width: $width-col-1;
+	border: 1px solid #000;
+}
+.title-col-2, .table__content-col-2 {
+	border: 1px solid #000;
+	width: $width-col-2;
+}
+.title-col-3, .table__content-col-3 {
+	border: 1px solid #000;
+	width: $width-col-3;
+}
+.title-col-4, .table__content-col-4 {
+	border: 1px solid #000;
+	width: $width-col-4;
+}
+.item-style {
+	div {
+		margin-top: -1px;
+		padding: 4px 0px;
+		min-height: 1rem;
+		&+div {
+			border-left: none;
+		}
+
+	}	
+}
+
+/*end table*/

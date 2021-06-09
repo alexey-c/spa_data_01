@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Тест SPA MySQL DB v001.0</title>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__title">Таблица в формате Single Page Application</div>
+			<form action=""></form>
+				<div class="header__control">
+					<div class="header__control-select-col">
+						<div class="select-col-title label">Выберите столбец для сортировки</div>
+						<select name="select-col" id="select-col">
+							<option value="name-col" selected>Название</option>
+							<option value="quantity-col">Количество</option>
+							<option value="distanse-col">Расстояние</option>
+						</select>
+					</div>
+					<div class="header__control-select-cond">
+						<div class="select-col-title label">Выберите условие сортировки</div>
+						<select name="select-cond" id="select-cond">
+							<option value="equ" selected>Равно</option>
+							<option value="con">Содержит</option>
+							<option value="gre">Больше</option>
+							<option value="les">Меньше</option>
+						</select>
+					</div>
+					<div class="header__control-select-text">
+						<div class="select-col-title label">Введите строку фильтра</div>
+						<input type="text" id="select-text" class="header__control-filter-text">
+					</div>
+					<div class="search-button">
+						<button id="sort-btn">Сортировать</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</header>
+	<section class="table">
+		<div class="container">
+			<div class="table__title"><span>Таблица результатов сортировки</span></div>
+			<div class="table__columns">
+				<div class="table__title item-style display-flex"  id="table__content-row-1">
+					<div class="title-col-1">Дата</div> 			<!-- date -->
+					<div class="title-col-2">Название</div> 	<!-- name -->
+					<div class="title-col-3">Количество</div> <!-- quantity -->
+					<div class="title-col-4">Расстояние</div> <!-- distance -->
+				</div>
+				<div class="table__content">
+					<div class="table__content-rows">
+						<div class="table__content-row-1  item-style display-flex">
+							<div class="table__content-col-1"></div>
+							<div class="table__content-col-2"></div>
+							<div class="table__content-col-3"></div>
+							<div class="table__content-col-4"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+c:/users/alan/programs/openserver537/userdata/php_upload/
